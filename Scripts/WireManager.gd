@@ -1,5 +1,7 @@
 extends Node
 
+var on = false
+
 func SpawnWire(Start: Vector3, End: Vector3, WireColor: Color = Color.BLACK, Radius: float = 0.02) -> MeshInstance3D:
 	var NewMeshInstance = MeshInstance3D.new()
 	var NewCylinder = CylinderMesh.new()
@@ -34,3 +36,4 @@ func update_wire_position(WireInstance: MeshInstance3D, Start: Vector3, End: Vec
 		WireInstance.global_position
 	)
 	WireInstance.rotate_object_local(Vector3.RIGHT, deg_to_rad(90))
+	
