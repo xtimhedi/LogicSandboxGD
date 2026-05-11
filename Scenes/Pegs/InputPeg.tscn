@@ -2,12 +2,8 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_kwd3c"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdkow"]
-albedo_color = Color(0, 0, 0, 1)
-
 [node name="InputPeg" type="Node3D" unique_id=1244794910]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=332407446]
 transform = Transform3D(0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, 0, 0, 0)
 mesh = SubResource("BoxMesh_kwd3c")
-surface_material_override/0 = SubResource("StandardMaterial3D_sdkow")

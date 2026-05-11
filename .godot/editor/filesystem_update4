@@ -10,3 +10,4 @@ res://addons/PlayerCharacter/Camera/raycast.gd
 res://Scenes/Pegs/InputPeg.tscn
 res://Scenes/Pegs/OutputPeg.tscn
 res://Scripts/WireManager.gd
+res://Scripts/InputPeg.gd
