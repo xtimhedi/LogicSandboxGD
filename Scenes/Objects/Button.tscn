@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://ciduxg8ratbvi"]
+
+[ext_resource type="PackedScene" uid="uid://csl226o5cobg" path="res://Scenes/Pegs/OutputPeg.tscn" id="1_5eokw"]
+[ext_resource type="Script" uid="uid://c4fm2e7egpli0" path="res://Scripts/Button.gd" id="1_d1dk7"]
+[ext_resource type="Script" uid="uid://buvcnpq5imqn1" path="res://Scripts/Destroyers/Button.gd" id="3_msdqy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p1gdi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5eokw"]
+albedo_color = Color(0.18739128, 0.3660146, 0.98067087, 1)
+
+[sub_resource type="Animation" id="Animation_msdqy"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ButtonRoot/Button")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.42139572, 0)
+
+[sub_resource type="Animation" id="Animation_f15vc"]
+resource_name = "press"
+length = 0.1
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ButtonRoot/Button")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.229, 0, 0.033333335, 1, 0, 0.091, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w1suu"]
+_data = {
+&"RESET": SubResource("Animation_msdqy"),
+&"press": SubResource("Animation_f15vc")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d1dk7"]
+
+[node name="Button" type="Node3D" unique_id=1629829827]
+
+[node name="OutputPeg" parent="." unique_id=1528009353 instance=ExtResource("1_5eokw")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.25160933, 0.43171805)
+
+[node name="ButtonRoot" type="StaticBody3D" parent="." unique_id=474635500]
+unique_name_in_owner = true
+transform = Transform3D(0.832, 0, 0, 0, 0.832, 0, 0, 0, 0.832, 0, 0.5855989, 0.0039539337)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_d1dk7")
+
+[node name="Button" type="MeshInstance3D" parent="ButtonRoot" unique_id=654540969]
+transform = Transform3D(0.96107763, 0, 0, 0, 0.4330188, 0, 0, 0, 0.97187173, 0, 0.42139572, 0)
+layers = 3
+mesh = SubResource("BoxMesh_p1gdi")
+surface_material_override/0 = SubResource("StandardMaterial3D_5eokw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ButtonRoot" unique_id=489052119]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_w1suu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ButtonRoot" unique_id=364994573]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.15968984, 0)
+shape = SubResource("BoxShape3D_d1dk7")
+
+[node name="ButtonBase" type="StaticBody3D" parent="." unique_id=1782974604]
+unique_name_in_owner = true
+transform = Transform3D(0.832, 0, 0, 0, 0.832, 0, 0, 0, 0.832, 0, 0.5855989, 0.0039539337)
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("3_msdqy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ButtonBase" unique_id=1362508580]
+transform = Transform3D(1.192077, 0, 0, 0, 0.93279725, 0, 0, 0, 1.2218562, 0, -0.27888066, 0)
+shape = SubResource("BoxShape3D_d1dk7")
+
+[node name="ButtonBase" type="MeshInstance3D" parent="ButtonBase" unique_id=1988401456]
+transform = Transform3D(1.2019228, 0, 0, 0, 1.201923, 0, 0, 0, 1.2019228, 0, -0.3642869, -0.004752324)
+layers = 3
+mesh = SubResource("BoxMesh_p1gdi")

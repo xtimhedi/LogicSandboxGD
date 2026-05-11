@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dg22x6f47wtbe"]
+
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://addons/PlayerCharacter/player_character_scene.tscn" id="1_2wl7v"]
+[ext_resource type="Texture2D" uid="uid://d1cs2cna8o6w4" path="res://Assets/grass.png" id="2_4bvgx"]
+[ext_resource type="Script" uid="uid://cd08o1kusngfp" path="res://Scripts/placement.gd" id="4_jwv4s"]
+[ext_resource type="Script" uid="uid://c2aabyhynpcxl" path="res://Scripts/InputHandler.gd" id="5_lohlh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gjbiy"]
+
+[sub_resource type="Sky" id="Sky_2wl7v"]
+sky_material = SubResource("ProceduralSkyMaterial_gjbiy")
+
+[sub_resource type="Environment" id="Environment_4bvgx"]
+background_mode = 2
+sky = SubResource("Sky_2wl7v")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2wl7v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mbwn"]
+albedo_texture = ExtResource("2_4bvgx")
+
+[sub_resource type="BoxMesh" id="BoxMesh_4bvgx"]
+
+[node name="GameScene" type="Node3D" unique_id=2023633032]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=262282205]
+transform = Transform3D(1, 0, 0, 0, 0.7747569, 0.63225925, 0, -0.63225925, 0.7747569, 0, 11.631909, 7.198963)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1771576766]
+environment = SubResource("Environment_4bvgx")
+
+[node name="PlayerCharacter" parent="." unique_id=453568606 instance=ExtResource("1_2wl7v")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8054614, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1454288188]
+transform = Transform3D(146.484, 0, 0, 0, 5, 0, 0, 0, 100, 0, 0, 0)
+collision_layer = 5
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=670568990]
+shape = SubResource("BoxShape3D_2wl7v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D" unique_id=267985190]
+material_override = SubResource("StandardMaterial3D_3mbwn")
+mesh = SubResource("BoxMesh_4bvgx")
+
+[node name="LogicComponents" type="Node3D" parent="." unique_id=1899300077 groups=["saveable"]]
+unique_name_in_owner = true
+script = ExtResource("4_jwv4s")
+
+[node name="InputHandler" type="Node3D" parent="." unique_id=889639562]
+script = ExtResource("5_lohlh")

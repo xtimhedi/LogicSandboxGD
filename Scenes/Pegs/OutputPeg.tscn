@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://csl226o5cobg"]
+
+[ext_resource type="Script" uid="uid://lq6fib11yvqs" path="res://Scripts/OutputPeg.gd" id="1_icaso"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8jwrs"]
+
+[node name="OutputPeg" type="Node3D" unique_id=1528009353]
+script = ExtResource("1_icaso")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=441170930]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
+mesh = SubResource("BoxMesh_8jwrs")
