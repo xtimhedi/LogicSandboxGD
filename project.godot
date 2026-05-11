@@ -21,6 +21,7 @@ SaveService="*uid://dw2jqksq3v6m8"
 SaveFlow="*uid://dt4a6xk0kvlm0"
 Placement="*uid://cd08o1kusngfp"
 InputHandler="*uid://c2aabyhynpcxl"
+WireManager="*uid://ccykm1aib4pn4"
 
 [display]
 
