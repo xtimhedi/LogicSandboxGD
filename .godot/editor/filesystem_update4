@@ -1,0 +1,11 @@
+res://Scenes/GameScene.tscn
+res://addons/PlayerCharacter/player_character_scene.tscn
+res://addons/PlayerCharacter/Camera/placement_ray.gd
+res://addons/PlayerCharacter/Camera/destruction_ray.gd
+res://Scenes/Objects/Button.tscn
+res://Scripts/Button.gd
+res://Scripts/Destroyers/Button.gd
+res://Scripts/InputHandler.gd
+res://addons/PlayerCharacter/Camera/raycast.gd
+res://Scenes/Pegs/InputPeg.tscn
+res://Scenes/Pegs/OutputPeg.tscn
