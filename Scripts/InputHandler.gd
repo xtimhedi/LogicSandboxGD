@@ -10,13 +10,16 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_key_pressed(KEY_1):
+	# interact
+	if Input.is_key_pressed(KEY_I):
 		Tool = 0
-	elif Input.is_key_pressed(KEY_2):
+	# place
+	elif Input.is_key_pressed(KEY_P):
 		Tool = 1
-	elif Input.is_key_pressed(KEY_3):
+	# delete
+	elif Input.is_key_pressed(KEY_R):
 		Tool = 2
-		
+	# Test wire
 	elif Input.is_key_pressed(KEY_B):
 		WireManager.SpawnWire(Vector3(1,5,1),Vector3(5,5,5))
 	print(Tool)	

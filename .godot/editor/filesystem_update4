@@ -11,3 +11,5 @@ res://Scenes/Pegs/InputPeg.tscn
 res://Scenes/Pegs/OutputPeg.tscn
 res://Scripts/WireManager.gd
 res://Scripts/InputPeg.gd
+res://Scenes/Objects/Gates/Inverter.tscn
+res://Scripts/Inverter.gd
