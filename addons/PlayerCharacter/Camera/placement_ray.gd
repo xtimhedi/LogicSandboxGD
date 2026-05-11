@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 	if InputHandler.Tool == 1:
 		if Input.is_action_just_pressed("interact"):
 			if is_colliding():
-				Placement.PlaceObject(Placement.LSBButton, get_collision_point())
+				Placement.PlaceObject(InputHandler.Gate, get_collision_point())
 			
 	
 	

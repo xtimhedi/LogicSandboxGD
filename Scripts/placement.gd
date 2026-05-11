@@ -2,6 +2,7 @@ extends Node3D
 
 #define all of the items you can place
 const LSBButton = preload("res://Scenes/Objects/Button.tscn")
+const LSBInverter = preload("res://Scenes/Objects/Gates/Inverter.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

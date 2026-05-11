@@ -1,6 +1,7 @@
 extends Node
 
 var Tool = 0
+var Gate = Placement.LSBButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,4 +23,10 @@ func _process(delta: float) -> void:
 	# Test wire
 	elif Input.is_key_pressed(KEY_B):
 		WireManager.SpawnWire(Vector3(1,5,1),Vector3(5,5,5))
+		
+	# add some gate choices
+	elif Input.is_key_pressed(KEY_1):
+		Gate = Placement.LSBButton
+	elif Input.is_key_pressed(KEY_2):
+		Gate = Placement.LSBInverter
 	print(Tool)	
