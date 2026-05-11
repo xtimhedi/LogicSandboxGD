@@ -2,7 +2,7 @@ extends Node
 
 var on = false
 
-func SpawnWire(Start: Vector3, End: Vector3, WireColor: Color = Color.BLACK, Radius: float = 0.02) -> MeshInstance3D:
+func SpawnWire(Start: Vector3, End: Vector3, WireColor: Color = Color.BLACK, Radius: float = 0.06) -> MeshInstance3D:
 	var NewMeshInstance = MeshInstance3D.new()
 	var NewCylinder = CylinderMesh.new()
 	
