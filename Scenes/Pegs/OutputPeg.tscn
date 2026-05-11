@@ -2,11 +2,19 @@
 
 [ext_resource type="Script" uid="uid://lq6fib11yvqs" path="res://Scripts/OutputPeg.gd" id="1_icaso"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_icaso"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_8jwrs"]
 
 [node name="OutputPeg" type="Node3D" unique_id=1528009353]
 script = ExtResource("1_icaso")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=441170930]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2028559684]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1480961949]
 transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
+shape = SubResource("BoxShape3D_icaso")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D" unique_id=441170930]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("BoxMesh_8jwrs")
