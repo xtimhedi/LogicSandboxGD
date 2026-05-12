@@ -10,3 +10,5 @@ res://Scripts/Inverter.gd
 res://Scripts/Button.gd
 res://Scripts/Helpers.gd
 res://Scenes/GameScene.tscn
+res://addons/PlayerCharacter/Camera/destruction_ray.gd
+res://Scripts/Destroyers/Button.gd

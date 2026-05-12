@@ -6,6 +6,12 @@ var Gate = Placement.LSBButton
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
+	
+func RotateCW(object):
+	object.global_rotation_degrees.y -= 90
+	
+func RotateCCW(object):
+	object.global_rotation_degrees.y += 90
 
 
 
