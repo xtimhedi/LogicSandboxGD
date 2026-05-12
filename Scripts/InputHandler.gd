@@ -29,4 +29,3 @@ func _process(delta: float) -> void:
 		Gate = Placement.LSBButton
 	elif Input.is_key_pressed(KEY_2):
 		Gate = Placement.LSBInverter
-	print(Tool)	

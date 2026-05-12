@@ -3,29 +3,35 @@
 [ext_resource type="Script" uid="uid://d0858brg5ua6q" path="res://Scripts/Inverter.gd" id="1_5m37f"]
 [ext_resource type="PackedScene" uid="uid://uybj3k0aejl5" path="res://Scenes/Pegs/InputPeg.tscn" id="1_js2x7"]
 [ext_resource type="PackedScene" uid="uid://csl226o5cobg" path="res://Scenes/Pegs/OutputPeg.tscn" id="2_5m37f"]
+[ext_resource type="Script" uid="uid://ucmkbby7on1j" path="res://Scripts/Destroyers/Inverter.gd" id="3_helax"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6bil"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_i6owi"]
 
 [node name="Inverter" type="Node3D" unique_id=1453320956]
-script = ExtResource("1_5m37f")
 
 [node name="In" parent="." unique_id=1244794910 instance=ExtResource("1_js2x7")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9875422, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1256992275]
+[node name="Base" type="StaticBody3D" parent="." unique_id=1256992275]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5034268, 0)
 collision_layer = 8
 collision_mask = 8
+script = ExtResource("3_helax")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=764884880]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Base" unique_id=764884880]
 shape = SubResource("BoxShape3D_q6bil")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2055613033]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Base" unique_id=2055613033]
 mesh = SubResource("BoxMesh_i6owi")
 
 [node name="Out" parent="." unique_id=1528009353 instance=ExtResource("2_5m37f")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.49453253, -0.49459922)
+
+[node name="Script" type="Node3D" parent="." unique_id=647404703]
+unique_name_in_owner = true
+script = ExtResource("1_5m37f")
