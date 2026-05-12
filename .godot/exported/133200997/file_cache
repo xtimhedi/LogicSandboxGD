@@ -1,0 +1,17 @@
+res://addons/Arts/label_settings.tres::747e75f857862fdee69e46a522d4d675::1778475940::res://.godot/exported/133200997/export-0f7e78af171a743051231c4c70edcf07-label_settings.res
+res://addons/Arts/structure_material.tres::3cc27cb79fa0e0ff4c6e52b80ba71579::1778475940::res://.godot/exported/133200997/export-fffd07d63ddf0e111efe7f44ec59bf9f-structure_material.res
+res://addons/Arts/structure_material_2.tres::06404cdfab8d57a34a601938279e9404::1778475940::res://.godot/exported/133200997/export-f9b340606c4d2b07fe994ecaaff3f5f5-structure_material_2.res
+res://addons/Arts/structure_material_red.tres::99fba7af7b5c8cfa7e47444f318d4d80::1778475940::res://.godot/exported/133200997/export-ecd7817e2c7121290cad1e513f64e95f-structure_material_red.res
+res://addons/Map/MovementModifiers/conveyorZone/conveyor_zone_scene.tscn::510d31bc1a1086df500397b50d44b192::1778475940::res://.godot/exported/133200997/export-10c260bfb220a64256cc92d5a06d53d7-conveyor_zone_scene.scn
+res://addons/Map/MovementModifiers/gravityZone/gravity_zone_scene.tscn::b2f08c917f7a0df3ca96650e0bcdb1fb::1778475940::res://.godot/exported/133200997/export-798ea82ad47d3aae0fab65b0a34b33d7-gravity_zone_scene.scn
+res://addons/Map/MovementModifiers/jumpPads/directionalJumpPad/directional_jump_pad_scene.tscn::480f09143ef450aad46728320c01ab8b::1778475940::res://.godot/exported/133200997/export-8e6f7da9c94d49ae3033fbfbcfd7cd76-directional_jump_pad_scene.scn
+res://addons/Map/MovementModifiers/jumpPads/verticalJumpPad/vertical_jump_pad_scene.tscn::a753795e199a6c270af8131c1b122d04::1778475940::res://.godot/exported/133200997/export-6733d25d1a7ffd3e37178d3e0e006acd-vertical_jump_pad_scene.scn
+res://addons/Map/MovementModifiers/slipperyZone/slippery_zone_scene.tscn::ee726937f343e5c4880c77da6cf99116::1778475940::res://.godot/exported/133200997/export-0a94d2fe57e412e5e79dc5818b3dde43-slippery_zone_scene.scn
+res://addons/Map/template_map_scene.tscn::f8d233e7b6a8209fec905815815c82d5::1778475940::res://.godot/exported/133200997/export-7f59f0dc0fd5fc30372b6247fb880e89-template_map_scene.scn
+res://addons/PlayerCharacter/UI/player_character_ui_theme.tres::df495e9a4bcc361620b239ca1456b293::1778475940::res://.godot/exported/133200997/export-5e21416f12203777c5bd0302b4dc4d07-player_character_ui_theme.res
+res://addons/PlayerCharacter/player_character_scene.tscn::ab810f0a9c82d5e719b967ae29e178a3::1778563373::res://.godot/exported/133200997/export-4e1108be2e436e5c30b4e0f9b4773efe-player_character_scene.scn
+res://Scenes/Objects/Gates/Inverter.tscn::e7cebfa29f832062428088065e2bee70::1778568453::res://.godot/exported/133200997/export-f913ef122fb95ecfe9e2d1817dc95aee-Inverter.scn
+res://Scenes/Objects/Button.tscn::6173d4c49ad070b6b18151e7f5199704::1778580832::res://.godot/exported/133200997/export-30687f2c1811b6e334284e739363e597-Button.scn
+res://Scenes/Pegs/InputPeg.tscn::5f823707f365009ad0720ce7d04b48f7::1778571855::res://.godot/exported/133200997/export-81c7eb7b6bc98ff791f695be6f745d72-InputPeg.scn
+res://Scenes/Pegs/OutputPeg.tscn::57f2546602c4c44162248fb155421257::1778572419::res://.godot/exported/133200997/export-3f0b13999bf1a42c1f0aaa983b0e60be-OutputPeg.scn
+res://Scenes/GameScene.tscn::c672a0ebb6ce8b841d82cb6daf25bb61::1778574160::res://.godot/exported/133200997/export-485cf4938b4165e8e54abfe8aef897c7-GameScene.scn
