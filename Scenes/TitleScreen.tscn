@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://pgj1igr1ydjp"]
 
+[ext_resource type="Script" uid="uid://bt1pdslekwm0s" path="res://Scripts/TitleScreen.gd" id="1_8l4an"]
 [ext_resource type="Texture2D" uid="uid://c24107p8ya6pk" path="res://Assets/logo.png" id="1_uebgo"]
 [ext_resource type="Script" uid="uid://dstaynn2th3ht" path="res://Scripts/SplashText.gd" id="2_vmg2h"]
 
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8l4an")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2115877966]
 position = Vector2(960, 140)
@@ -46,10 +48,13 @@ layout_mode = 2
 layout_mode = 2
 text = "Play"
 
-[node name="PlayButton2" type="Button" parent="MarginContainer/VBoxContainer" unique_id=456105317]
+[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=456105317]
 layout_mode = 2
 text = "Settings"
 
-[node name="PlayButton3" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1921153096]
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1921153096]
 layout_mode = 2
 text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PlayButton" to="." method="TransitionToMainGameScene"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/QuitButton" to="." method="QuitGame"]

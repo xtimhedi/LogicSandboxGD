@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778586135
+::res://::1778589228
 export_presets.cfg::TextFile::-1::1778581944::0::1::::<><><>0<>0<><>::
 ::res://addons/::1778586063
 README.md::TextFile::-1::1778475940::0::1::::<><><>0<>0<><>::
@@ -297,9 +297,9 @@ robert.png::CompressedTexture2D::1294149842480483910::1778477697::1778477701::1:
 saveSettings.cfg::TextFile::-1::1778494981::0::1::::<><><>0<>0<><>::
 ::res://Docs/::1778580832
 Binds.md::TextFile::-1::1778580832::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1778585961
+::res://Scenes/::1778588332
 GameScene.tscn::PackedScene::7637815381640771842::1778574160::0::1::::<><><>0<>0<><>::uid://bwggrf7sbmkcv::::res://addons/PlayerCharacter/player_character_scene.tscn<>uid://d1cs2cna8o6w4::::res://Assets/grass.png<>uid://cd08o1kusngfp::::res://Scripts/placement.gd<>uid://c2aabyhynpcxl::::res://Scripts/InputHandler.gd
-TitleScreen.tscn::PackedScene::1065812234934991565::1778585961::0::1::::<><><>0<>0<><>::uid://c24107p8ya6pk::::res://Assets/logo.png<>uid://dstaynn2th3ht::::res://Scripts/SplashText.gd
+TitleScreen.tscn::PackedScene::1065812234934991565::1778588332::0::1::::<><><>0<>0<><>::uid://c24107p8ya6pk::::res://Assets/logo.png<>uid://dstaynn2th3ht::::res://Scripts/SplashText.gd
 ::res://Scenes/Objects/::1778582773
 Button.tscn::PackedScene::5341801029759579854::1778582773::0::1::::<><><>0<>0<><>::uid://csl226o5cobg::::res://Scenes/Pegs/OutputPeg.tscn<>uid://c4fm2e7egpli0::::res://Scripts/Button.gd<>uid://buvcnpq5imqn1::::res://Scripts/Destroyers/Button.gd
 ::res://Scenes/Objects/Gates/::1778582958
@@ -307,7 +307,7 @@ Inverter.tscn::PackedScene::4872705812119247693::1778582958::0::1::::<><><>0<>0<
 ::res://Scenes/Pegs/::1778583452
 InputPeg.tscn::PackedScene::1453400215233894648::1778583096::0::1::::<><><>0<>0<><>::uid://hb1jys8xt5j4::::res://Scripts/InputPeg.gd
 OutputPeg.tscn::PackedScene::178254056900675664::1778583452::0::1::::<><><>0<>0<><>::uid://lq6fib11yvqs::::res://Scripts/OutputPeg.gd
-::res://Scripts/::1778586129
+::res://Scripts/::1778587381
 Button.gd::GDScript::6819416801725574061::1778583323::0::1::::<>StaticBody3D<><>0<>0<><>::
 Helpers.gd::GDScript::4563735017052725563::1778574116::0::1::::<>Node<><>0<>0<><>::
 InputHandler.gd::GDScript::6667943203889430953::1778580175::0::1::::<>Node<><>0<>0<><>::
@@ -315,7 +315,7 @@ InputPeg.gd::GDScript::494982287075128047::1778561215::0::1::::<>Node<><>0<>0<><
 Inverter.gd::GDScript::8983988127994455854::1778583308::0::1::::<>Node3D<><>0<>0<><>::
 OutputPeg.gd::GDScript::806998902777236966::1778560678::0::1::::<>Node<><>0<>0<><>::
 placement.gd::GDScript::5037047386016184025::1778503283::0::1::::<>Node3D<><>0<>0<><>::
-SplashText.gd::GDScript::8461927977083203193::1778586129::0::1::::<>Label<><>0<>0<><>::
+SplashText.gd::GDScript::8461927977083203193::1778587381::0::1::::<>Label<><>0<>0<><>::
 WireManager.gd::GDScript::4963394086187305995::1778571774::0::1::::<>Node<><>0<>0<><>::
 ::res://Scripts/Destroyers/::1778580037
 Button.gd::GDScript::3833694952536667444::1778580037::0::1::::<>Node<><>0<>0<><>::
