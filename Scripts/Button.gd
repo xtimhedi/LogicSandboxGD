@@ -9,8 +9,8 @@ func _ready() -> void:
 
 func press():
 	$AnimationPlayer.play("press")
-	%OutputPeg/StaticBody3D.on = true
+	%OutputPeg/OutputPeg.on = true
 	
 func release():
 	$AnimationPlayer.play_backwards("press")
-	%OutputPeg/StaticBody3D.on = false
+	%OutputPeg/OutputPeg.on = false

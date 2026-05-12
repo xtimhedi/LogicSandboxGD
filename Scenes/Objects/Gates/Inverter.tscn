@@ -13,11 +13,11 @@
 
 [node name="In" parent="." unique_id=1244794910 instance=ExtResource("1_js2x7")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9875422, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.491, 0)
 
 [node name="Base" type="StaticBody3D" parent="." unique_id=1256992275]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5034268, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.249, 0)
 collision_layer = 8
 collision_mask = 8
 script = ExtResource("3_helax")
@@ -30,8 +30,9 @@ mesh = SubResource("BoxMesh_i6owi")
 
 [node name="Out" parent="." unique_id=1528009353 instance=ExtResource("2_5m37f")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.49453253, -0.49459922)
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, -0.5, 0, 0.5, -2.1855694e-08, 0, 0.24430364, -0.25892735)
 
 [node name="Script" type="Node3D" parent="." unique_id=647404703]
 unique_name_in_owner = true
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.002962619, -0.011627719)
 script = ExtResource("1_5m37f")

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LogicSandbox"
-run/main_scene="uid://dg22x6f47wtbe"
+run/main_scene="uid://pgj1igr1ydjp"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]
@@ -31,7 +31,7 @@ window/size/viewport_height=1080
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/saveEngine/plugin.cfg", "res://addons/saveflow_lite/plugin.cfg", "res://addons/savekit/plugin.cfg")
+enabled=PackedStringArray("res://addons/project_statistics/plugin.cfg", "res://addons/saveEngine/plugin.cfg", "res://addons/saveflow_lite/plugin.cfg", "res://addons/savekit/plugin.cfg")
 
 [global_group]
 

@@ -1,15 +1,2 @@
-res://Scenes/Objects/Button.tscn
-res://addons/PlayerCharacter/Camera/raycast.gd
-res://Scenes/Objects/Gates/Inverter.tscn
-res://Scripts/InputHandler.gd
-res://addons/PlayerCharacter/Camera/placement_ray.gd
-res://Scenes/Pegs/InputPeg.tscn
-res://Scenes/Pegs/OutputPeg.tscn
-res://Scripts/WireManager.gd
-res://Scripts/Inverter.gd
-res://Scripts/Button.gd
-res://Scripts/Helpers.gd
-res://Scenes/GameScene.tscn
-res://addons/PlayerCharacter/Camera/destruction_ray.gd
-res://Scripts/Destroyers/Button.gd
-res://Docs/Binds.md
+res://Scenes/TitleScreen.tscn
+res://Scripts/SplashText.gd

@@ -19,7 +19,7 @@ func _physics_process(_delta):
 		
 		if %InteractionRaycast.is_colliding():
 			var collider = %InteractionRaycast.get_collider()
-			if collider.name == "StaticBody3D":
+			if collider.name == "OutputPeg" or collider.name == "InputPeg":
 				if Input.is_action_just_pressed("interact"):
 				
 					if PegNumber == 0:
@@ -31,13 +31,19 @@ func _physics_process(_delta):
 					elif PegNumber == 1:
 						SelectedPegB = %InteractionRaycast.get_collider()
 						print(SelectedPegB.global_position)
-						PegNumber += 1
 						print(SelectedPegB)
-						await Input.is_action_just_released("interact")
-					elif PegNumber == 2:
-						print(SelectedPegA, SelectedPegB)
-						WireManager.SpawnWire(SelectedPegA.global_position,SelectedPegB.global_position, SelectedPegA, SelectedPegB)
-						PegNumber = 0
+						if SelectedPegA.name == "OutputPeg":
+							if SelectedPegB.name != "OutputPeg":
+								await Input.is_action_just_released("interact")
+								print(SelectedPegA, SelectedPegB)
+								WireManager.SpawnWire(SelectedPegA.global_position,SelectedPegB.global_position, SelectedPegA, SelectedPegB)
+								PegNumber = 0
+						elif SelectedPegA.name == "InputPeg":
+							if SelectedPegB.name != "InputPeg":
+								await Input.is_action_just_released("interact")
+								print(SelectedPegA, SelectedPegB)
+								WireManager.SpawnWire(SelectedPegA.global_position,SelectedPegB.global_position, SelectedPegA, SelectedPegB)
+								PegNumber = 0
 						
 				
 	
