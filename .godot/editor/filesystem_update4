@@ -12,3 +12,4 @@ res://Scripts/Helpers.gd
 res://Scenes/GameScene.tscn
 res://addons/PlayerCharacter/Camera/destruction_ray.gd
 res://Scripts/Destroyers/Button.gd
+res://Docs/Binds.md

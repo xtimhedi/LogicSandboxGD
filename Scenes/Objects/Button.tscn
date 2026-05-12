@@ -52,11 +52,11 @@ roughness = 0.65
 
 [node name="OutputPeg" parent="." unique_id=1528009353 instance=ExtResource("1_5eokw")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, -2.2433781e-08, -1, 0, 0.5132251, -4.371139e-08, 0, 0.4702531, 0.76660585)
+transform = Transform3D(0.5, 0, 0, 0, -1.12168905e-08, -0.5, 0, 0.25661254, -2.1855694e-08, 0, 0.23749751, 0.5123886)
 
 [node name="Interactable" type="StaticBody3D" parent="." unique_id=474635500]
 unique_name_in_owner = true
-transform = Transform3D(0.832, 0, 0, 0, 0.832, 0, 0, 0, 0.832, 0, 0.8042427, 0.0039539337)
+transform = Transform3D(0.416, 0, 0, 0, 0.416, 0, 0, 0, 0.416, 0, 0.40449226, 0.13106258)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_d1dk7")
@@ -80,7 +80,7 @@ shape = SubResource("BoxShape3D_d1dk7")
 
 [node name="ButtonBase" type="StaticBody3D" parent="." unique_id=1782974604]
 unique_name_in_owner = true
-transform = Transform3D(0.832, 0, 0, 0, 0.832, 0, 0, 0, 0.832, 0, 0.8042427, 0.0039539337)
+transform = Transform3D(0.416, 0, 0, 0, 0.416, 0, 0, 0, 0.416, 0, 0.40449226, 0.13106258)
 collision_layer = 8
 collision_mask = 8
 script = ExtResource("3_msdqy")
