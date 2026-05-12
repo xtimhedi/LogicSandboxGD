@@ -6,3 +6,7 @@ res://addons/PlayerCharacter/Camera/destruction_ray.gd
 res://Scripts/InputHandler.gd
 res://Scenes/Objects/Gates/Inverter.tscn
 res://Scripts/Destroyers/Inverter.gd
+res://addons/PlayerCharacter/Camera/placement_ray.gd
+res://Scripts/WireManager.gd
+res://Scenes/GameScene.tscn
+res://Scenes/Objects/Button.tscn

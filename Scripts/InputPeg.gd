@@ -6,11 +6,13 @@ var material = StandardMaterial3D.new()
 func _ready() -> void:
 	%MeshInstance3D.set_surface_override_material(0, material)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Set color and materials and shit
 func _process(delta: float) -> void:
 	if on:
 		material.albedo_color = Color(1, 0, 0) # Red
+		material.emission_enabled = true
+		material.emission = Color(1, 0, 0)
+		material.emission_energy_multiplier = 100
 	else:
 		material.albedo_color = Color(0.0, 0.0, 0.0, 1.0) # Black
-		
+		material.emission_enabled = false

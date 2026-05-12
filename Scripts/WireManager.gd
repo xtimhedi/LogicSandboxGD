@@ -11,6 +11,7 @@ func SpawnWire(Start: Vector3, End: Vector3, WireColor: Color = Color.BLACK, Rad
 	NewCylinder.radial_segments = 8
 	NewCylinder.rings = 1
 	
+	
 	var NewMaterial = StandardMaterial3D.new()
 	NewMaterial.albedo_color = WireColor
 	NewCylinder.material = NewMaterial

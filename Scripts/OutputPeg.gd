@@ -11,6 +11,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if on:
 		material.albedo_color = Color(1, 0, 0) # Red
+		material.emission_enabled = true
+		material.emission = Color(1, 0, 0)
+		material.emission_energy_multiplier = 30
 	else:
 		material.albedo_color = Color(0.0, 0.0, 0.0, 1.0) # Black
-		
+		material.emission_enabled = false

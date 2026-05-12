@@ -13,6 +13,7 @@ sky_material = SubResource("ProceduralSkyMaterial_gjbiy")
 [sub_resource type="Environment" id="Environment_4bvgx"]
 background_mode = 2
 sky = SubResource("Sky_2wl7v")
+glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2wl7v"]
 
