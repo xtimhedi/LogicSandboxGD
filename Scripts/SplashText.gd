@@ -13,7 +13,13 @@ var Texts = [
 	"MORE COMMITS MORE COMMITS MORE COMMITS",
 	"Hello there!",
 	"Who are you?",
-	"HOLY SPAGHETTI"
+	"HOLY SPAGHETTI",
+	"var texts = uwu",
+	"#GottaLoveDoxing",
+	"Do you even itorate, bro?",
+	"NEVA GOOOOOOON",
+	"Ohhh I like this guy -Potatos",
+	"Give a man a fih and you feed him for a day,\ngive a man a poisoned fih and you feed him for a lifetime"
 ]
 
 func _ready():
