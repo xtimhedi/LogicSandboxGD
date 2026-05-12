@@ -10,7 +10,10 @@ var Texts = [
 	"I like ranch",
 	"I like cats",
 	":3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c\n:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c\n:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c",
-	"MORE COMMITS MORE COMMITS MORE COMMITS"
+	"MORE COMMITS MORE COMMITS MORE COMMITS",
+	"Hello there!",
+	"Who are you?",
+	"HOLY SPAGHETTI"
 ]
 
 func _ready():
