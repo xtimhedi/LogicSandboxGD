@@ -20,9 +20,9 @@ func _process(delta: float) -> void:
 	# delete
 	elif Input.is_key_pressed(KEY_R):
 		Tool = 2
-	# Test wire
-	elif Input.is_key_pressed(KEY_B):
-		WireManager.SpawnWire(Vector3(1,5,1),Vector3(5,5,5))
+		
+	elif Input.is_key_pressed(KEY_G):
+		Tool = 3
 		
 	# add some gate choices
 	elif Input.is_key_pressed(KEY_1):

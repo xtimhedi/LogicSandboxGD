@@ -19,7 +19,7 @@ length = 0.001
 tracks/0/type = "position_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("ButtonRoot/Button")
+tracks/0/path = NodePath("Interactable/Button")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.42139572, 0)
@@ -30,7 +30,7 @@ length = 0.1
 tracks/0/type = "position_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("ButtonRoot/Button")
+tracks/0/path = NodePath("Interactable/Button")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.229, 0, 0.033333335, 1, 0, 0.091, 0)
@@ -43,33 +43,38 @@ _data = {
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d1dk7"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_msdqy"]
+metallic = 1.0
+metallic_specular = 0.0
+roughness = 0.65
+
 [node name="Button" type="Node3D" unique_id=1629829827]
 
 [node name="OutputPeg" parent="." unique_id=1528009353 instance=ExtResource("1_5eokw")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.4702531, 0.43171805)
+transform = Transform3D(1, 0, 0, 0, -2.2433781e-08, -1, 0, 0.5132251, -4.371139e-08, 0, 0.4702531, 0.76660585)
 
-[node name="ButtonRoot" type="StaticBody3D" parent="." unique_id=474635500]
+[node name="Interactable" type="StaticBody3D" parent="." unique_id=474635500]
 unique_name_in_owner = true
 transform = Transform3D(0.832, 0, 0, 0, 0.832, 0, 0, 0, 0.832, 0, 0.8042427, 0.0039539337)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_d1dk7")
 
-[node name="Button" type="MeshInstance3D" parent="ButtonRoot" unique_id=654540969]
+[node name="Button" type="MeshInstance3D" parent="Interactable" unique_id=654540969]
 transform = Transform3D(0.96107763, 0, 0, 0, 0.4330188, 0, 0, 0, 0.97187173, 0, 0.42139572, 0)
 layers = 3
 mesh = SubResource("BoxMesh_p1gdi")
 surface_material_override/0 = SubResource("StandardMaterial3D_5eokw")
 
-[node name="ReflectionProbe" type="ReflectionProbe" parent="ButtonRoot/Button" unique_id=636122462]
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Interactable/Button" unique_id=636122462]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ButtonRoot" unique_id=489052119]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactable" unique_id=489052119]
 unique_name_in_owner = true
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_w1suu")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ButtonRoot" unique_id=364994573]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable" unique_id=364994573]
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.15968984, 0)
 shape = SubResource("BoxShape3D_d1dk7")
 
@@ -88,3 +93,6 @@ shape = SubResource("BoxShape3D_d1dk7")
 transform = Transform3D(1.2019228, 0, 0, 0, 1.201923, 0, 0, 0, 1.2019228, 0, -0.3642869, -0.004752324)
 layers = 3
 mesh = SubResource("BoxMesh_p1gdi")
+surface_material_override/0 = SubResource("StandardMaterial3D_msdqy")
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="ButtonBase/ButtonBase" unique_id=307794944]

@@ -8,4 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	%Out.on = not %In.on
+	if %In/StaticBody3D.on:
+		Helpers.WaitTick()
+		%Out/StaticBody3D.on = false
+	elif %In/StaticBody3D.on == false:
+		Helpers.WaitTick()
+		%Out/StaticBody3D.on = true

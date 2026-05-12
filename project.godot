@@ -22,6 +22,7 @@ SaveFlow="*uid://dt4a6xk0kvlm0"
 Placement="*uid://cd08o1kusngfp"
 InputHandler="*uid://c2aabyhynpcxl"
 WireManager="*uid://ccykm1aib4pn4"
+Helpers="*uid://b6aybwumd77h4"
 
 [display]
 

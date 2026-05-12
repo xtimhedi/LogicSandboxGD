@@ -1,10 +1,30 @@
 extends Node
 
-var on = false
+const WireScript = """
 
-func SpawnWire(Start: Vector3, End: Vector3, WireColor: Color = Color.BLACK, Radius: float = 0.06) -> MeshInstance3D:
+extends MeshInstance3D
+
+var LinkA : StaticBody3D
+var LinkB : StaticBody3D
+
+func _process(float) -> void:
+	LinkB.on = LinkA.on
+"""
+var WSGD = GDScript.new()
+
+func _ready():
+	WSGD.source_code = WireScript
+	WSGD.reload()
+
+func SpawnWire(Start: Vector3, End: Vector3, LinkA, LinkB, WireColor: Color = Color.BLACK, Radius: float = 0.06) -> MeshInstance3D:
 	var NewMeshInstance = MeshInstance3D.new()
 	var NewCylinder = CylinderMesh.new()
+	
+	NewMeshInstance.set_script(WSGD)
+	
+	NewMeshInstance.LinkA = LinkA
+	NewMeshInstance.LinkB = LinkB
+	
 	
 	NewCylinder.top_radius = Radius
 	NewCylinder.bottom_radius = Radius
