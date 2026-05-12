@@ -1,3 +1,4 @@
+HBoxContainer
 MarginContainer
 Panel
 ReflectionProbe
@@ -12,4 +13,3 @@ SaveAgent
 SaveElement3D
 RayCast3D
 AnimationPlayer
-Sprite3D

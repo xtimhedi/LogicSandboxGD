@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://di1y1mnd6lpl2" path="res://addons/PlayerCharacter/Camera/destruction_ray.gd" id="16_58bc8"]
 [ext_resource type="Texture2D" uid="uid://dv747ov6fcrsg" path="res://addons/Arts/crosshair.png" id="16_gfbru"]
 [ext_resource type="StyleBox" uid="uid://c50syhy1a4dmh" path="res://addons/PlayerCharacter/UI/player_character_ui_theme.tres" id="18_ovq28"]
+[ext_resource type="Script" uid="uid://cm7iqhom1f7hm" path="res://addons/PlayerCharacter/UI/Toolbar.gd" id="21_pp6m3"]
 [ext_resource type="Script" uid="uid://sca7ypsol83f" path="res://addons/PlayerCharacter/StateMachine/state_machine_script.gd" id="54_e0r17"]
 [ext_resource type="Script" uid="uid://stil4xkf3tk0" path="res://addons/PlayerCharacter/StateMachine/idle_state_script.gd" id="55_dayh2"]
 [ext_resource type="Script" uid="uid://blt7dest23fk0" path="res://addons/PlayerCharacter/StateMachine/walk_state_script.gd" id="56_w3td4"]
@@ -239,13 +240,15 @@ text = "....."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="HUD" unique_id=912425988]
+[node name="Toolbar" type="MarginContainer" parent="HUD" unique_id=912425988]
+unique_name_in_owner = true
 offset_left = 940.0
 offset_top = 940.0
 offset_right = 980.0
 offset_bottom = 980.0
+script = ExtResource("21_pp6m3")
 
-[node name="Panel" type="Panel" parent="HUD/MarginContainer" unique_id=1801038126]
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/Toolbar" unique_id=115780635]
 layout_mode = 2
 
 [connection signal="change_fov" from="StateMachine" to="CameraHolder" method="change_fov"]

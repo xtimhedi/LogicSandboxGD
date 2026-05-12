@@ -12,3 +12,4 @@ res://Scenes/GameScene.tscn
 res://Scenes/Objects/Button.tscn
 res://Scripts/Button.gd
 res://addons/PlayerCharacter/player_character_scene.tscn
+res://addons/PlayerCharacter/UI/Toolbar.gd
