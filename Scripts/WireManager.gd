@@ -8,7 +8,11 @@ var LinkA : StaticBody3D
 var LinkB : StaticBody3D
 
 func _process(float) -> void:
-	LinkB.on = LinkA.on
+	if LinkA.on:
+		if !LinkB.on:
+			LinkB.on = true
+	else:
+		LinkB.on = false
 """
 var WSGD = GDScript.new()
 

@@ -1,6 +1,6 @@
 extends Node3D
 
-
+var LocalTickCounter : int = 0
 
 func _ready() -> void:
 	pass # Replace with function body.
@@ -8,9 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if %In/InputPeg.on:
-		Helpers.WaitTick()
-		%Out/OutputPeg.on = false
-	elif %In/InputPeg.on == false:
-		Helpers.WaitTick()
-		%Out/OutputPeg.on = true
+	if LocalTickCounter == 32:
+		%Out/OutputPeg.on = not %In/InputPeg.on
+		LocalTickCounter = 0
+	LocalTickCounter += 1

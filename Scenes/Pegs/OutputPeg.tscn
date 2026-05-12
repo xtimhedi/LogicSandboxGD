@@ -21,6 +21,3 @@ shape = SubResource("BoxShape3D_icaso")
 unique_name_in_owner = true
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("BoxMesh_8jwrs")
-
-[node name="PlacementAnchor" type="Node3D" parent="OutputPeg" unique_id=1917162017]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46096712, 0)

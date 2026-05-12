@@ -25,7 +25,6 @@ var Texts = [
 func _ready():
 	RandomText()
 	StartBounce()
-	print(ProjectStatistics.Category.SCRIPT)	
 
 func StartBounce():
 	var tween = create_tween().set_loops()
