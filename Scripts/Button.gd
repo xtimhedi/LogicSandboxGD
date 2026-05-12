@@ -8,14 +8,9 @@ func _ready() -> void:
 
 
 func press():
-	
 	$AnimationPlayer.play("press")
 	%OutputPeg.on = true
 	
 func release():
-	
 	$AnimationPlayer.play_backwards("press")
 	%OutputPeg.on = false
-	
-
-	

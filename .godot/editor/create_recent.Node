@@ -1,3 +1,5 @@
+MarginContainer
+Panel
 ReflectionProbe
 WorldEnvironment
 Node3D
@@ -11,5 +13,3 @@ SaveElement3D
 RayCast3D
 AnimationPlayer
 Sprite3D
-Camera3D
-DirectionalLight3D
