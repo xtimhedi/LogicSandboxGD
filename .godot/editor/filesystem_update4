@@ -1,11 +1,6 @@
-res://Scenes/TitleScreen.tscn
-res://Scripts/TitleScreen.gd
-res://Scripts/SplashText.gd
-res://Scenes/Pegs/InputPeg.tscn
-res://addons/PlayerCharacter/Camera/raycast.gd
-res://Scenes/Pegs/OutputPeg.tscn
 res://Scenes/Objects/Gates/Inverter.tscn
-res://Scenes/Objects/Button.tscn
-res://Scripts/Destroyers/Button.gd
-res://Scripts/Inverter.gd
 res://Scripts/WireManager.gd
+res://Scripts/Inverter.gd
+res://Scripts/InputPeg.gd
+res://Scripts/OutputPeg.gd
+res://Scripts/Button.gd

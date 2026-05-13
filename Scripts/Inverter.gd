@@ -1,14 +1,15 @@
 extends Node3D
 
-var LocalTickCounter : int = 0
+var LastInputState : bool = false
 
 func _ready() -> void:
-	pass # Replace with function body.
+	var InitialInput = %In/InputPeg.on
+	LastInputState = InitialInput
+	%Out/OutputPeg.SetSignalState(not InitialInput, null)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if LocalTickCounter == 32:
-		%Out/OutputPeg.on = not %In/InputPeg.on
-		LocalTickCounter = 0
-	LocalTickCounter += 1
+func _process(_delta: float) -> void:
+	var CurrentInput = %In/InputPeg.on
+	
+	if CurrentInput != LastInputState:
+		LastInputState = CurrentInput
+		%Out/OutputPeg.SetSignalState(not CurrentInput, null)

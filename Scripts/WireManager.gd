@@ -1,18 +1,23 @@
 extends Node
 
 const WireScript = """
+extends Node
 
-extends MeshInstance3D
+@export var LinkA: Node
+@export var LinkB: Node
 
-var LinkA : StaticBody3D
-var LinkB : StaticBody3D
+func _ready() -> void:
+	if LinkA and LinkB:
+		LinkA.ConnectedPegs.append(LinkB)
+		LinkB.ConnectedPegs.append(LinkA)
+		if LinkA.on:
+			LinkB.SetSignalState(true, LinkA)
+		elif LinkB.on:
+			LinkA.SetSignalState(true, LinkB)
 
-func _process(float) -> void:
-	if LinkA.on:
-		if !LinkB.on:
-			LinkB.on = true
-	else:
-		LinkB.on = false
+func destroy():
+	queue_free()
+		
 """
 var WSGD = GDScript.new()
 
