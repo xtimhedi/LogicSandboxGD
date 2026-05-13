@@ -4,3 +4,5 @@ res://Scripts/Inverter.gd
 res://Scripts/InputPeg.gd
 res://Scripts/OutputPeg.gd
 res://Scripts/Button.gd
+res://Scenes/TitleScreen.tscn
+res://Scripts/SplashText.gd

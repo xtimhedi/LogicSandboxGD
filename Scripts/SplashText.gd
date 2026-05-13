@@ -6,7 +6,7 @@ var Texts = [
 	"Its 4050-8050 meters tall\nIts 7200-14000 meters long\nIts 4030-7850 meters wide\n\nITS AN ITERATOR!",
 	"You done did it this time....",
 	"Go play Logic World instead!",
-	"251 lines of code!",
+	"2080 lines of code!",
 	"I like ranch",
 	"I like cats",
 	":3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c\n:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c\n:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c:3c",

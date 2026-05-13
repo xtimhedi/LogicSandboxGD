@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dg22x6f47wtbe"]
 
-[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://addons/PlayerCharacter/player_character_scene.tscn" id="1_2wl7v"]
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://PlayerCharacter/player_character_scene.tscn" id="1_2wl7v"]
 [ext_resource type="Texture2D" uid="uid://d1cs2cna8o6w4" path="res://Assets/grass.png" id="2_4bvgx"]
 [ext_resource type="Script" uid="uid://cd08o1kusngfp" path="res://Scripts/placement.gd" id="4_jwv4s"]
 [ext_resource type="Script" uid="uid://c2aabyhynpcxl" path="res://Scripts/InputHandler.gd" id="5_lohlh"]
